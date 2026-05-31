@@ -6,13 +6,13 @@
 :- dynamic spartan_fallecido/1.
 
 spartan(noble_six, personalizable, noble_team).
-spartan(carter, A259, noble_team).
-spartan(kat, B320, noble_team).
+spartan(carter, a259, noble_team).
+spartan(kat, b320, noble_team).
 spartan(jorge, 052, noble_team).
-spartan(emile, A239, noble_team).
-spartan(jun, A266, noble_team).
+spartan(emile, a239, noble_team).
+spartan(jun, a266, noble_team).
 
-spartan_vivo(noble_six)
+spartan_vivo(noble_six).
 spartan_vivo(jorge).
 spartan_vivo(carter).
 spartan_vivo(jun).
