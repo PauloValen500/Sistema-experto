@@ -43,3 +43,16 @@ mision(nueva_alejandria, kat,info(reach, operacion_urbana, equipo(carter, kat, e
 mision(el_paquete, carter, info(reach, extraccion, equipo(carter, emile, noble_six))).
 mision(the_pillar_of_autumn, emile, info(reach, escolta, equipo(emile, noble_six))).
 mision(lobo_solitario, noble_six, info(reach, resistencia, equipo(noble_six))).
+
+
+progreso(Mision):- mision(Mision, B, _),
+    B \= ninguno,
+    spartan_vivo(B),
+    assertz(spartan_fallecido(B)),
+    retract(spartan_vivo(B)),
+    write(B), write(' temrinó su campaña en la mision '),
+    write(Mision), nl.
+
+progreso(Mision):- mision(Mision, ninguno, _),
+    write("Mision "), write(Mision),
+    write(' completada sin bajas en el Noble Team.'), nl.
