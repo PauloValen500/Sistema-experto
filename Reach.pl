@@ -12,14 +12,14 @@ spartan(jorge, 052, noble_team).
 spartan(emile, a239, noble_team).
 spartan(jun, a266, noble_team).
 
-shangheili(minior, azul, infanteria_basica, covenant, 1).
-shangheili(major, rojo, lider_escuadron, covenant, 2).
-shangheili(ultra, blanco, lider_combate, covenant, 3).
-shangheili(ranger, plateado, asalto, covenant, 4).
-shangheili(spec_ops, morado, fuerzas_especiales, covenant, 5).
-shangheili(general, dorado, comandate_terrestre, covenant, 6).
-shangheili(zealot, marron, mision_especial, covenant, 7).
-shangheili(field_marshal, vino, comandante_operaciones, covenant, 8).
+sangheili(minior, azul, infanteria_basica, covenant, 1).
+sangheili(major, rojo, lider_escuadron, covenant, 2).
+sangheili(ultra, blanco, lider_combate, covenant, 3).
+sangheili(ranger, plateado, asalto, covenant, 4).
+sangheili(spec_ops, morado, fuerzas_especiales, covenant, 5).
+sangheili(general, dorado, comandate_terrestre, covenant, 6).
+sangheili(zealot, marron, mision_especial, covenant, 7).
+sangheili(field_marshal, vino, comandante_operaciones, covenant, 8).
 
 spartan_vivo(noble_six).
 spartan_vivo(jorge).
@@ -36,24 +36,24 @@ arma(m6g, unsc, secundaria).
 arma(rocket_launcher, unsc, explosiva).
 arma(granade_launcher, unsc, explosiva).
 
-arma_shangheili(pistola_de_plasma, corto_alcance, 0).
-arma_shangheili(rifle_de_plasma, medio_alcance, 0).
-arma_shangheili(repetidor_de_plasma, medio_alcance, 0).
-arma_shangheili(granada_de_plasma, explosiva, 0).
+arma_sangheili(pistola_de_plasma, corto_alcance, 0).
+arma_sangheili(rifle_de_plasma, medio_alcance, 0).
+arma_sangheili(repetidor_de_plasma, medio_alcance, 0).
+arma_sangheili(granada_de_plasma, explosiva, 0).
 
-arma_shangheili(aguijoneador, medio_alcance, 1).
-arma_shangheili(rifle_de_agujas, largo_alcance, 2).
+arma_sangheili(aguijoneador, medio_alcance, 1).
+arma_sangheili(rifle_de_agujas, largo_alcance, 2).
 
-arma_shangheili(rifle_de_foco, largo_alcance, 4).
-arma_shangheili(rifle_de_conmocion, explosiva, 4).
+arma_sangheili(rifle_de_foco, largo_alcance, 4).
+arma_sangheili(rifle_de_conmocion, explosiva, 4).
 
-arma_shangheili(espada_de_energia, cuerpo_a_cuerpo, 5).
+arma_sangheili(espada_de_energia, cuerpo_a_cuerpo, 5).
 
-arma_shangheili(canon_de_combustible, explosiva_pesada, 6).
-arma_shangheili(lanzador_de_plasma, explosiva_pesada, 6).
+arma_sangheili(canon_de_combustible, explosiva_pesada, 6).
+arma_sangheili(lanzador_de_plasma, explosiva_pesada, 6).
 
-arma_shangheili(espada_de_energia_sagrada, cuerpo_a_cuerpo, 7).
-arma_shangheili(canon_de_combustible_field_marshal, explosiva_pesada, 8).
+arma_sangheili(espada_de_energia_sagrada, cuerpo_a_cuerpo, 7).
+arma_sangheili(canon_de_combustible_field_marshal, explosiva_pesada, 8).
 
 vehiculos(warthog, unsc, terrestre).
 vehiculos(scorpion, unsc, terrestre).
