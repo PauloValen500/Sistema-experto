@@ -12,6 +12,15 @@ spartan(jorge, 052, noble_team).
 spartan(emile, a239, noble_team).
 spartan(jun, a266, noble_team).
 
+shangheili(minior, azul, infanteria_basica, covenant, 1).
+shangheili(major, rojo, lider_escuadron, covenant, 2).
+shangheili(ultra, blanco, lider_combate, covenant, 3).
+shangheili(ranger, plateado, asalto, covenant, 4).
+shangheili(spec_ops, morado, fuerzas_especiales, covenant, 5).
+shangheili(general, dorado, comandate_terrestre, covenant, 6).
+shangheili(zealot, marron, mision_especial, covenant, 7).
+shangheili(field_marshal, vino, comandante_operaciones, covenant, 8).
+
 spartan_vivo(noble_six).
 spartan_vivo(jorge).
 spartan_vivo(carter).
@@ -27,10 +36,33 @@ arma(m6g, unsc, secundaria).
 arma(rocket_launcher, unsc, explosiva).
 arma(granade_launcher, unsc, explosiva).
 
+arma_shangheili(pistola_de_plasma, corto_alcance, 0).
+arma_shangheili(rifle_de_plasma, medio_alcance, 0).
+arma_shangheili(repetidor_de_plasma, medio_alcance, 0).
+arma_shangheili(granada_de_plasma, explosiva, 0).
+
+arma_shangheili(aguijoneador, medio_alcance, 1).
+arma_shangheili(rifle_de_agujas, largo_alcance, 2).
+
+arma_shangheili(rifle_de_foco, largo_alcance, 4).
+arma_shangheili(rifle_de_conmocion, explosiva, 4).
+
+arma_shangheili(espada_de_energia, cuerpo_a_cuerpo, 5).
+
+arma_shangheili(canon_de_combustible, explosiva_pesada, 6).
+arma_shangheili(lanzador_de_plasma, explosiva_pesada, 6).
+
+arma_shangheili(espada_de_energia_sagrada, cuerpo_a_cuerpo, 7).
+arma_shangheili(canon_de_combustible_field_marshal, explosiva_pesada, 8).
+
 vehiculos(warthog, unsc, terrestre).
 vehiculos(scorpion, unsc, terrestre).
 vehiculos(falcon, unsc, aereo).
 vehiculos(pelican, unsc, aereo).
+vehiculos(ghost, covenant, terrestre).
+vehiculos(wraith, covenant, terrestre).
+vehiculos(banshee, covenant, aereo).
+vehiculos(phantom, covenant, aereo).
 
 mision(contingencia_invernal, ninguno, info(reach, reconocimiento, [carter, kat, jorge, emile, jun, noble_six])).
 mision(oni_base_espada, ninguno, info(reach, defensa, [carter, kat, noble_six])).
@@ -42,6 +74,17 @@ mision(nueva_alejandria, kat, info(reach, operacion_urbana, [carter, kat, emile,
 mision(el_paquete, carter, info(reach, extraccion, [carter, emile, noble_six])).
 mision(the_pillar_of_autumn, emile, info(reach, escolta, [emile, noble_six])).
 mision(lobo_solitario, noble_six, info(reach, resistencia, [noble_six])).
+
+covenant_en_mision(contingencia_invernal, [zealot, field_marshal, minor]).
+covenant_en_mision(oni_base_espada, [minor, major, zealot]).
+covenant_en_mision(anochecer, [ranger, spec_ops, minor]).
+covenant_en_mision(punta_de_lanza, [minor, major, ultra, general]).
+covenant_en_mision(larga_noche_de_solace, [ranger, spec_ops, zealot]).
+covenant_en_mision(exodo, [minor, major, ultra]).
+covenant_en_mision(nueva_alejandria, [ranger, spec_ops, field_marshal]).
+covenant_en_mision(el_paquete, [ultra, general, zealot]).
+covenant_en_mision(the_pillar_of_autumn, [general, zealot, field_marshal]).
+covenant_en_mision(lobo_solitario, [ultra, zealot, field_marshal]).
 
 % Regla 1
 tipo_mision(Mision):-
