@@ -28,14 +28,6 @@ spartan_vivo(jun).
 spartan_vivo(kat).
 spartan_vivo(emile).
 
-arma(dmr, unsc, largo_alcance).
-arma(shotgun, unsc, corto_alcance).
-arma(assault_rifle, unsc, medio_alcance).
-arma(sniper_rifle, unsc, muy_largo_alcance).
-arma(m6g, unsc, secundaria).
-arma(rocket_launcher, unsc, explosiva).
-arma(granade_launcher, unsc, explosiva).
-
 arma_sangheili(pistola_de_plasma, corto_alcance, 0).
 arma_sangheili(rifle_de_plasma, medio_alcance, 0).
 arma_sangheili(repetidor_de_plasma, medio_alcance, 0).
@@ -54,15 +46,6 @@ arma_sangheili(lanzador_de_plasma, explosiva_pesada, 6).
 
 arma_sangheili(espada_de_energia_sagrada, cuerpo_a_cuerpo, 7).
 arma_sangheili(canon_de_combustible_field_marshal, explosiva_pesada, 8).
-
-vehiculos(warthog, unsc, terrestre).
-vehiculos(scorpion, unsc, terrestre).
-vehiculos(falcon, unsc, aereo).
-vehiculos(pelican, unsc, aereo).
-vehiculos(ghost, covenant, terrestre).
-vehiculos(wraith, covenant, terrestre).
-vehiculos(banshee, covenant, aereo).
-vehiculos(phantom, covenant, aereo).
 
 mision(contingencia_invernal, ninguno, info(reach, reconocimiento, [carter, kat, jorge, emile, jun, noble_six])).
 mision(oni_base_espada, ninguno, info(reach, defensa, [carter, kat, noble_six])).
