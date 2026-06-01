@@ -111,6 +111,21 @@ progreso(Mision):-
     mision(Mision, ninguno, _),
     write('Mision '), write(Mision), write(' completada sin bajas en el Noble Team.'), nl.
 
+
+sangheili_puede_usar(Sangheili, Arma):-
+    sangheili(Sangheili, _, _, _, X), 
+    arma_sangheili(Arma, _, Y),
+    X >= Y.
+
+armas_por_rango(Nombre, Arma):-
+    sangheili(Nombre, _, _, _, NivelRango), 
+    arma_sangheili(Arma, _, NivelNecesario), 
+    NivelRango >= NivelNecesario.
+
+informacion_sangheili_por_color(Color, Nombre, Tipo):-
+    sangheili(Nombre, Color, Tipo, _, _).
+
+
 % Pruebas de ejecucion
 probar_sistema :-
     write('=== INICIANDO PRUEBAS DEL SISTEMA EXPERTO ==='), nl, nl,
